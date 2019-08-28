@@ -417,3 +417,16 @@ body.ready .mars__planet {
   width: 35vw;
   height: 0.2vw;
 }
+
+.year-container p{
+  position: absolute;
+  color: white;
+  margin-left: 1.5vw;
+  margin-top: 33vw;
+  letter-spacing: 0.1vw;
+}
+
+.fe_radio{
+  margin-top: 33vw;
+  margin-left: 10vw;
+}
