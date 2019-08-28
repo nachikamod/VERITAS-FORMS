@@ -1,5 +1,5 @@
-firebase_api() {
-  var firebaseConfig = {
+function firebase_api() {
+  const firebaseConfig = {
     apiKey: "AIzaSyARAx-SCwt5RhK7NlcXTcoMewKOHAXeiw8",
     authDomain: "tesa-a9fed.firebaseapp.com",
     databaseURL: "https://tesa-a9fed.firebaseio.com",
@@ -10,10 +10,19 @@ firebase_api() {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
-  window.alert("script is working");
 }
 
-verify_existence() {
-  window.alert("Yes it works!!");
+function verify_existence() {
+  var entered_uid = document.getElementById("uid_code").value;
+//  window.alert("Error : " + entered_uid);
+
+  //firebase.database().ref().child("Company References").set("");
+  firebase.database().ref().once("value").then(function(snapshot){
+    if (snapshot.exists()) {
+      window.alert("yes");
+    }
+    else{
+      window.alert("no");
+    }
+  });
 }
