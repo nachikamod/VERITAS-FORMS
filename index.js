@@ -3,13 +3,13 @@
 
 function firebase_api() {
   const firebaseConfig = {
-    apiKey: "AIzaSyARAx-SCwt5RhK7NlcXTcoMewKOHAXeiw8",
-    authDomain: "tesa-a9fed.firebaseapp.com",
-    databaseURL: "https://tesa-a9fed.firebaseio.com",
-    projectId: "tesa-a9fed",
-    storageBucket: "tesa-a9fed.appspot.com",
-    messagingSenderId: "83131530119",
-    appId: "1:83131530119:web:32f14c08f12f0dfc"
+    apiKey: "AIzaSyCrU_y9UAhbnHZHcqQmf6UXnfhvLqobIKM",
+    authDomain: "tesa-e41fa.firebaseapp.com",
+    databaseURL: "https://tesa-e41fa.firebaseio.com",
+    projectId: "tesa-e41fa",
+    storageBucket: "tesa-e41fa.appspot.com",
+    messagingSenderId: "344256809964",
+    appId: "1:344256809964:web:415a0136546054d3"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -31,13 +31,5 @@ function verify_existence() {
 }
 
 function uploadFile() {
-  var fileUpload = document.getElementById("file");
-
-  fileUpload.addEventListener('change', function(e) {
-    var file = e.target.files[0];
-
-    var storageRef = firebase.storage().ref('folder_name/' + file.name);
-
-    storageRef.put(file);
-  });
+  
 }

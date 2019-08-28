@@ -3,13 +3,14 @@
   padding: 0;
 }
 
-body{
-  background: #4A4A4A;
+.upload_file{
+  width: 60px;
+  height: 20px;
+  padding: 5 5 5 5;
+  background-image: linear-gradient(to bottom,#3337ab7 0,#265a88 100%);
 }
 
-
-
-.upload_file{
+.upload_button{
   width: 60px;
   height: 20px;
   padding: 5 5 5 5;
