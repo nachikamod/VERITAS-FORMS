@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERITAS FORMS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section section--header" id="start">
+      <div class="stars" style="transform: translateY(0px);">
+        <div class="nebula"></div>
+      </div>
+    	<div class="mars">
+    	   <div class="mars__planet" style="transform: translateY(0px) scale(1);"></div>
+    	</div>
+      <div class="timer">
+        <p id="demo"></p>
+        <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+        </script>
+      </div>
+      <div class="header_name">
+        <h1>VERITAS</h1>
+      </div>
+      <div class="unique_id">
+        <input type="text" placeholder="Unique ID" id="uid_code">
+      </div>
+      <div class="check_status">
+        <img src="rocket_button.png" alt="">
+      </div>
+      <div class="coder">
+        <img src="coding-bg-less.gif" alt="">
+      </div>
+      <div class="show-buttons">
+        <div class="button-white1">
+          <img src="buttons.png" alt="">
+        </div>
+        <div class="button-white2">
+          <img src="buttons.png" alt="">
+        </div>
+        <div class="button-white3">
+          <img src="buttons.png" alt="">
+        </div>
+        <div class="button-white4">
+          <img src="buttons.png" alt="">
+        </div>
+        <div class="button-white5">
+          <img src="buttons.png" alt="">
+        </div>
+        <div class="button-white6">
+          <img src="buttons.png" alt="">
+        </div>
+      </div>
+      <div class="credits">
+        <p>Made by - Nachiket Kamod</p>
+      </div>
+    </section>
+
+  </body>
+</html>
