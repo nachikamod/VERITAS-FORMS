@@ -1,3 +1,6 @@
+var selectedFile;
+
+
 function firebase_api() {
   const firebaseConfig = {
     apiKey: "AIzaSyARAx-SCwt5RhK7NlcXTcoMewKOHAXeiw8",
@@ -17,12 +20,12 @@ function verify_existence() {
 //  window.alert("Error : " + entered_uid);
 
   //firebase.database().ref().child("Company References").set("");
-  firebase.database().ref().once("value").then(function(snapshot){
+  firebase.database().ref().child(entered_uid).once("value").then(function(snapshot){
     if (snapshot.exists()) {
-      window.alert("yes");
+      window.location.replace("registration_q43gr34b3248b3184bt0rb24.html");
     }
     else{
-      window.alert("no");
+      window.alert("MayDay MayDay this is not a free ride!!");
     }
   });
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css" />
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+  </head>
+  <body onload="firebase_api()">
+    <div class="upload_file">
+      <input type="file" class="upload-group" id="file">
+    </div>
+    <div class="upload_button">
+      <button type="button" id="uploadButton" onclick="uploadFile()">Submit</button>
+    </div>
+  </body>
+</html>
