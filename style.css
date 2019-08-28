@@ -294,6 +294,7 @@ body.ready .mars__planet {
 }
 
 .name-input input{
+  position: absolute;
   background-color: #17181c;
   opacity: 0.3;
   border-top: 0;
@@ -324,4 +325,95 @@ body.ready .mars__planet {
 
 .name-input input:focus::-webkit-input-placeholder{
   color: grey;
+}
+
+.name-hint{
+  letter-spacing: 0.1vw;
+  position: absolute;
+  font-size: 1vw;
+  color: white;
+  margin-top: 8vw;
+  margin-left:1.5vw;
+}
+
+.number-input input{
+  position: absolute;
+  background-color: #17181c;
+  opacity: 0.3;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 18vw;
+  height: 1.5vw;
+  padding: 0.4vw;
+  width: 94%;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  font-size: 1vw;
+  outline: 0;
+  border-bottom: 0.1vw solid white;
+  font-color: white;
+  color: white;
+}
+
+.number-input input:focus{
+  opacity: 1;
+  border-bottom: 0.1vw solid grey;
+}
+
+.number-input input::-webkit-input-placeholder{
+  font-size: 1vw;
+  color: white;
+}
+
+.number-input input:focus::-webkit-input-placeholder{
+  color: grey;
+}
+
+.number-hint{
+  letter-spacing: 0.1vw;
+  position: absolute;
+  font-size: 1vw;
+  color: white;
+  margin-top: 16vw;
+  margin-left:1.5vw;
+}
+
+.photo-hint{
+  letter-spacing: 0.1vw;
+  position: absolute;
+  font-size: 1vw;
+  color: white;
+  margin-top: 24vw;
+  margin-left:1.5vw;
+}
+
+.pic-upload{
+    letter-spacing: 0.1vw;
+    position: absolute;
+    font-size: 1vw;
+    color: white;
+    margin-top: 27vw;
+    margin-left:1.5vw;
+    font-size: 1vw;
+}
+
+.pic-upload input::-webkit-file-upload-button{
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding-right: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  background-color: #17181c;
+  color: white;
+  font-size: 1vw;
+}
+
+#uploader{
+  position: absolute;
+  margin-top: 0.7vw;
+  width: 35vw;
+  height: 0.2vw;
 }

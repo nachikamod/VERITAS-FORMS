@@ -23,9 +23,41 @@
         <div class="header-reg">
           <h1>VERITAS REGISTRATION</h1>
         </div>
-        <p class="Name"></p>
+        <p class="name-hint">FULL NAME</p>
         <div class="name-input">
           <input type="text" placeholder="Name" id="name-participant">
+        </div>
+        <p class="number-hint">MOBILE NUMBER</p>
+        <div class="number-input">
+          <input type="text" placeholder="+919400000000" id="contact-participant">
+        </div>
+        <p class="photo-hint">PROFILE PHOTO</p>
+        <div class="pic-upload">
+          <input type="file" id="fileButton"/>
+          <script>
+                var fileButton = document.getElementById("fileButton");
+                fileButton.addEventListener('change', function(e){
+                    var file = e.target.files[0];
+                    var storageRef = firebase.storage().ref(file.name);
+                    var task = storageRef.put(file);
+
+                    task.on('state_changed',
+                      function progress(snapshot){
+                        var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                        uploader.value = percentage;
+                      },
+
+                      function error(err) {
+
+                      },
+
+                      function complete(){
+                        alert("Profile picture uploaded")
+                      }
+                    );
+                });
+            </script>
+            <progress value="0" max="100" id="uploader">0%</progress>
         </div>
       </div>
 
