@@ -29,7 +29,3 @@ function verify_existence() {
     }
   });
 }
-
-function uploadFile() {
-  
-}

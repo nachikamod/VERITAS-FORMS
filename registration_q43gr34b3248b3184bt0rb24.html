@@ -4,21 +4,32 @@
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registration.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8">
     <script src="index.js"></script>
     <title>Registration Form</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body onload="firebase_api()">
-    <input type="file" id="fileButton"/>
-    <script>
-          var fileButton = document.getElementById("fileButton");
-          fileButton.addEventListener('change', function(e){
-              var file = e.target.files[0];
-              var storageRef = firebase.storage().ref(file.name);
-              storageRef.put(file);
-          });
-      </script>
+    <section class="section section--header" id="start">
+      <div class="stars" style="transform: translateY(0px);">
+        <div class="nebula"></div>
+      </div>
+    	<div class="mars">
+    	   <div class="mars__planet" style="transform: translateY(0px) scale(1);"></div>
+    	</div>
+      <div class="form-template"></div>
+      <div class="patch-template">
+        <div class="header-reg">
+          <h1>VERITAS REGISTRATION</h1>
+        </div>
+        <p class="Name"></p>
+        <div class="name-input">
+          <input type="text" placeholder="Name" id="name-participant">
+        </div>
+      </div>
+
+    </section>
+
   </body>
 </html>
