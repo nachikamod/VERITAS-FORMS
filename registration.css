@@ -8,20 +8,6 @@ body{
 }
 
 
-.title-header{
-  border: 0.3vw solid red;
-  position: absolute;
-  z-index: 1;
-}
-
-.canvas{
-  background-color: #222324;
-  border: 0.3vw solid #222324;
-  margin: 1vw;
-  margin-top: 5vw;
-  height: 45vw;
-  border-radius: 0.7vw;
-}
 
 .upload_file{
   width: 60px;
