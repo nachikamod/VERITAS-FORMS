@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VERITAS FORMS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="firebase_api()">
     <section class="section section--header" id="start">
       <div class="stars" style="transform: translateY(0px);">
         <div class="nebula"></div>
@@ -54,7 +56,7 @@
         <input type="text" placeholder="Unique ID" id="uid_code">
       </div>
       <div class="check_status">
-        <img src="rocket_button.png" alt="">
+        <img src="rocket_button.png" onclick="verify_existence()">
       </div>
       <div class="coder">
         <img src="coding-bg-less.gif" alt="">
