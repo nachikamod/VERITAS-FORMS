@@ -1,4 +1,4 @@
-var selectedFile;
+
 
 
 function firebase_api() {
@@ -27,5 +27,17 @@ function verify_existence() {
     else{
       window.alert("MayDay MayDay this is not a free ride!!");
     }
+  });
+}
+
+function uploadFile() {
+  var fileUpload = document.getElementById("file");
+
+  fileUpload.addEventListener('change', function(e) {
+    var file = e.target.files[0];
+
+    var storageRef = firebase.storage().ref('folder_name/' + file.name);
+
+    storageRef.put(file);
   });
 }
