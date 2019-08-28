@@ -242,6 +242,17 @@ body.ready .mars__planet {
   position: absolute;
   color: grey;
   font-size: 3vw;
-  margin-top: 170vw;
-  margin-left: 60vw;
+  margin-top: 45vw;
+  margin-left: 87vw;
+  font-size: 1vw;
+}
+
+@media screen and (max-width:500px) {
+  .credits {
+    position: absolute;
+    color: grey;
+    font-size: 3vw;
+    margin-top: 170vw;
+    margin-left: 60vw;
+  }
 }
