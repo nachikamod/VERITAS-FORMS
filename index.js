@@ -63,7 +63,7 @@ function submitData(){
   var gotRollNo = document.getElementById("roll-no-participant").value;
 
 
-  if (gotName.length > "10" && gotMobile.length > "9" && gotYear.length > "1" && gotDivision.length > "0" && gotRollNo > "0") {
+  if (gotName.length > "5" && gotMobile.length > "8" && gotYear.length > "1" && gotDivision.length > "0" && gotRollNo > "0") {
     var database = firebase.database().ref().child("participant").child(gotUid);
 
     database.child("name").set(gotName);
