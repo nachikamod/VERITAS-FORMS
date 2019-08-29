@@ -762,6 +762,8 @@ body.ready .mars__planet {
     margin-left:1.5vw;
   }
 
+  /*upload git*/
+
   .name-input input{
     position: absolute;
     background-color: #17181c;
