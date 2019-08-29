@@ -74,7 +74,6 @@ function submitData(){
     database.child("event").set(gotEvent);
 
     database.on('child_added', function(data){
-      alert("Data updated succefully");
       window.location.replace("idCard.html");
     });
 
