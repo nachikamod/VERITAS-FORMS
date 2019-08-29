@@ -1020,7 +1020,7 @@ body.ready .mars__planet {
     margin-top:150vw;
     width: 100%;
     border: 0;
-    height: 15vw;
+    height: 20vw;
     border-radius: 0 0 0.5vw 0.5vw;
   }
 
@@ -1051,10 +1051,10 @@ body.ready .mars__planet {
 
   .footer-div{
     position: absolute;
-    margin-left: 70vw;
+    margin-left: 50vw;
     margin-top: 188vw;
     color: grey;
-    font-size: 1.3vw;
+    font-size: 2.6vw;
   }
 
 
