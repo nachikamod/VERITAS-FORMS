@@ -32,6 +32,7 @@ function verify_existence() {
 
 function submitData(){
   var gotUid = localStorage.getItem("uid");
+  var gotEvent = localStorage.getItem("event");
   var gotName = document.getElementById("name-participant").value;
   var gotMobile = document.getElementById("contact-participant").value;
   var gotYear = document.getElementById("year-participant").value;
@@ -40,7 +41,7 @@ function submitData(){
 
 
 
-  if (gotName.length > "10" && gotMobile.length > "9" && gotYear.length > "1" && gotDivision.length > "1" && gotRollNo > "1") {
+  if (gotName.length > "10" && gotMobile.length > "9" && gotYear.length > "1" && gotDivision.length > "0" && gotRollNo > "0") {
     var database = firebase.database().ref().child("participant").child(gotUid);
 
     database.child("name").set(gotName);
@@ -48,10 +49,27 @@ function submitData(){
     database.child("year").set(gotYear);
     database.child("division").set(gotDivision);
     database.child("roll_no").set(gotRollNo);
+    database.child("event").set(gotEvent);
+
+    database.on('child_added', function(data){
+      alert("Data updated succefully");
+      window.location.replace("idCard.html");
+    });
 
   }
   else {
     alert("Please fill all the details");
   }
 
+}
+
+function selectTech(){
+  localStorage.setItem("event", "Technical");
+}
+
+function selectSports(){
+  localStorage.setItem("event", "Sports");
+}
+function selectCultural(){
+  localStorage.setItem("event", "Cultural");
 }
