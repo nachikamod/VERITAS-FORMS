@@ -727,7 +727,7 @@ body.ready .mars__planet {
     border-radius: 0.5vw;
     margin-left: 5vw;
     width: 90vw;
-    height: 190vw;
+    height: 200vw;
   }
 
 
@@ -1020,7 +1020,7 @@ body.ready .mars__planet {
     margin-top:150vw;
     width: 100%;
     border: 0;
-    height: 20vw;
+    height: 30vw;
     border-radius: 0 0 0.5vw 0.5vw;
   }
 
@@ -1031,7 +1031,7 @@ body.ready .mars__planet {
 
   .events input{
     margin-top: 1vw;
-    margin-left: 8.4vw;
+    margin-left: 3vw;
   }
 
   /*Bro here*/
@@ -1040,7 +1040,7 @@ body.ready .mars__planet {
     position: absolute;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    margin-top: 175vw;
+    margin-top: 185vw;
     border: 0;
     border-radius: 0.5vw;
     background-color: #4A4A4A;
@@ -1052,7 +1052,7 @@ body.ready .mars__planet {
   .footer-div{
     position: absolute;
     margin-left: 50vw;
-    margin-top: 188vw;
+    margin-top: 195vw;
     color: grey;
     font-size: 2.6vw;
   }
