@@ -1,6 +1,5 @@
 
 
-
 function firebase_api() {
   const firebaseConfig = {
     apiKey: "AIzaSyCrU_y9UAhbnHZHcqQmf6UXnfhvLqobIKM",
@@ -17,10 +16,11 @@ function firebase_api() {
 
 function verify_existence() {
   var entered_uid = document.getElementById("uid_code").value;
+  localStorage.setItem("uid",entered_uid);
 //  window.alert("Error : " + entered_uid);
 
   //firebase.database().ref().child("Company References").set("");
-  firebase.database().ref().child(entered_uid).once("value").then(function(snapshot){
+  firebase.database().ref().child("participant").child(entered_uid).once("value").then(function(snapshot){
     if (snapshot.exists()) {
       window.location.replace("registration_q43gr34b3248b3184bt0rb24.html");
     }
@@ -28,4 +28,30 @@ function verify_existence() {
       window.alert("MayDay MayDay this is not a free ride!!");
     }
   });
+}
+
+function submitData(){
+  var gotUid = localStorage.getItem("uid");
+  var gotName = document.getElementById("name-participant").value;
+  var gotMobile = document.getElementById("contact-participant").value;
+  var gotYear = document.getElementById("year-participant").value;
+  var gotDivision = document.getElementById("division-participant").value;
+  var gotRollNo = document.getElementById("roll-no-participant").value;
+
+
+
+  if (gotName.length > "10" && gotMobile.length > "9" && gotYear.length > "1" && gotDivision.length > "1" && gotRollNo > "1") {
+    var database = firebase.database().ref().child("participant").child(gotUid);
+
+    database.child("name").set(gotName);
+    database.child("contact").set(gotMobile);
+    database.child("year").set(gotYear);
+    database.child("division").set(gotDivision);
+    database.child("roll_no").set(gotRollNo);
+
+  }
+  else {
+    alert("Please fill all the details");
+  }
+
 }

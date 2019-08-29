@@ -257,7 +257,6 @@ body.ready .mars__planet {
   }
 }
 
-
 /*Registration css*/
 
 .form-template{
@@ -270,7 +269,7 @@ body.ready .mars__planet {
   border-radius: 0.5vw;
   margin-left: 24vw;
   width: 50vw;
-  height: 60vw;
+  height: 70vw;
 }
 
 
@@ -409,7 +408,7 @@ body.ready .mars__planet {
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
   padding-left: 1vw;
-  background-color: #17181c;
+  background-color: #4A4A4A;
   color: white;
   font-size: 1vw;
 }
@@ -579,8 +578,22 @@ body.ready .mars__planet {
 
 .footer-div{
   position: absolute;
-  margin-left: 78vw;
-  margin-top: 65vw;
+  margin-left: 15vw;
+  margin-top: 68vw;
   color: grey;
   font-size: 1.3vw;
+}
+
+.submit-form button {
+  width: 50vw;
+  position: absolute;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  margin-top: 63vw;
+  border: 0;
+  border-radius: 0.5vw;
+  background-color: #4A4A4A;
+  color: white;
+  outline: 0;
+  font-size: 1vw;
 }

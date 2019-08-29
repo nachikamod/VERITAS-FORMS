@@ -52,7 +52,11 @@
                       },
 
                       function complete(){
-                        alert("Profile picture uploaded")
+                        var photoUID = localStorage.getItem("uid");
+                        task.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                          var database = firebase.database().ref().child("participant").child(photoUID);
+                          database.child("imageURL").set(downloadURL);
+                        });
                       }
                     );
                 });
@@ -77,12 +81,13 @@
           <input type="radio" name="events" value="Sports">Sports</input>
           <input type="radio" name="events" value="Cultural">Cultural</input>
         </div>
-      </div>
-      <div class="footer-div">
-        <p>MADE BY - NACHIKET KAMOD</p>
+        <div class="submit-form">
+          <button type="button" name="button" onclick="submitData()" id="submitData">Submit</button>
+        </div>
+        <div class="footer-div">
+          <p>MADE BY - NACHIKET KAMOD</p>
+        </div>
       </div>
     </section>
-
-
   </body>
 </html>
