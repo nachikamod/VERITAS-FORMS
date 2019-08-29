@@ -597,3 +597,88 @@ body.ready .mars__planet {
   outline: 0;
   font-size: 1vw;
 }
+
+.info-container{
+  position: absolute;
+  width: 97vw;
+  height: 45vw;
+  background-color: #ffffff;
+  margin: 1vw;
+  border: 0.1vw solid #f1f1f1;
+  border-radius: 0.5vw;
+  box-shadow: 0.5vw 0.5vw 0.5vw grey;
+}
+
+.template-box{
+  position: absolute;
+  margin: 1vw;
+  border: 0.1vw solid #f1f1f1;
+  width: 98vw;
+  height: 44.6vw;
+  border-radius: 0.5vw;
+  box-shadow: 0.5vw 0.5vw 0.5vw grey;
+}
+
+.profileImage{
+  position: absolute;
+  width: 40vw;
+  height: 42.5vw;
+  border: 0;
+  border-radius: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 5vw;
+}
+
+.profileImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5vw;
+  box-shadow: 0.5vw 0.5vw 0.5vw grey;
+}
+
+.barcode{
+  position: absolute;
+}
+.barcode img{
+  position: absolute;
+  margin-left: -10vw;
+  margin-top: 20vw;
+  transform: rotate(-90deg);
+  width: 25vw;
+  height: 3vw;
+}
+
+.name-holder{
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 44.69vw;
+  background-color: #039be5;
+  height: 18vw;
+  margin-top: 13.31vw;
+  margin-left: 66.8vw;
+  border-radius: 0 0 0.5vw 0.5vw;
+  border: 0;
+}
+
+.name-holder h2{
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  position: absolute;
+  color: white;
+  margin-left: 11vw;
+  margin-top: 1vw;
+}
+
+.hint-name-field{
+  font-size: 1vw;
+  position: absolute;
+  color: white;
+  margin-top: 9vw;
+  margin-left: 12.5vw;
+  letter-spacing: 0.8vw;
+}
+
+.name-field{
+  text-transform: uppercase;
+}

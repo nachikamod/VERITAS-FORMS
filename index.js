@@ -40,7 +40,6 @@ function submitData(){
   var gotRollNo = document.getElementById("roll-no-participant").value;
 
 
-
   if (gotName.length > "10" && gotMobile.length > "9" && gotYear.length > "1" && gotDivision.length > "0" && gotRollNo > "0") {
     var database = firebase.database().ref().child("participant").child(gotUid);
 
@@ -72,4 +71,18 @@ function selectSports(){
 }
 function selectCultural(){
   localStorage.setItem("event", "Cultural");
+}
+
+function checkUrl(){
+  var uidURLCheck = localStorage.getItem("uid");
+  firebase.database().ref().child("participant").child(uidURLCheck).child("imageURL").on('value', function(snapshot) {
+    alert(snapshot.val());
+
+    document.getElementById("setImage").src = snapshot.val();
+  });
+  firebase.database().ref().child("participant").child(uidURLCheck).child("name").on('value', function(snapshot) {
+    alert(snapshot.val());
+
+    document.getElementById("name_field").innerHTML = snapshot.val();
+  });
 }
