@@ -12,6 +12,29 @@ function firebase_api() {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+    var uidURLCheck = localStorage.getItem("uid");
+
+  let qrcode = new QRCode("output", {
+      width: 177,
+      height: 177,
+      colorDark : "#990000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+  });
+
+  qrcode.clear();
+  qrcode.makeCode(uidURLCheck);
+
+
+  firebase.database().ref().child("participant").child(uidURLCheck).child("imageURL").on('value', function(snapshot) {
+
+    document.getElementById("setImage").src = snapshot.val();
+  });
+  firebase.database().ref().child("participant").child(uidURLCheck).child("name").on('value', function(snapshot) {
+
+    document.getElementById("name_field").innerHTML = snapshot.val();
+  });
 }
 
 function verify_existence() {
@@ -72,26 +95,3 @@ function selectSports(){
 function selectCultural(){
   localStorage.setItem("event", "Cultural");
 }
-
-function checkUrl(){
-  var uidURLCheck = localStorage.getItem("uid");
-  firebase.database().ref().child("participant").child(uidURLCheck).child("imageURL").on('value', function(snapshot) {
-    alert(snapshot.val());
-
-    document.getElementById("setImage").src = snapshot.val();
-  });
-  firebase.database().ref().child("participant").child(uidURLCheck).child("name").on('value', function(snapshot) {
-    alert(snapshot.val());
-
-    document.getElementById("name_field").innerHTML = snapshot.val();
-  });
-}
-
-var qrcode=new QRCode(document.getElementById('qrResult'),{
-    width:100,
-      height:100
-     });
-
-     function generate(){
-
-     }
