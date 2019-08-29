@@ -126,7 +126,7 @@ body.ready .mars__planet {
     letter-spacing: 0.3vw;
     position: absolute;
     z-index: 2;
-    margin-left: 29vw;
+    margin-left: 25vw;
     margin-top: 50vw;
     font-size: 5vw;
   }
@@ -149,14 +149,14 @@ body.ready .mars__planet {
   .unique_id input {
     position: absolute;
     z-index: 2;
-    margin-left: 27vw;
+    margin-left: 17vw;
     margin-top: 75vw;
-    font-size: 1.3vw;
+    font-size: 2.6vw;
     border-radius: 5vw;
     border: 0;
-    height: 5vw;
-    width: 40vw;
-    padding-left: 1vw;
+    height: 8vw;
+    width: 60vw;
+    padding-left: 2vw;
     outline: 0;
   }
 }
@@ -178,11 +178,11 @@ body.ready .mars__planet {
     position: absolute;
     z-index: 2;
     border: 0;
-    height: 5vw;
+    height: 8vw;
     padding-left: 1vw;
     padding-right: 1vw;
     margin-left: 55vw;
-    margin-top: 85vw;
+    margin-top: 88vw;
   }
 }
 
@@ -232,7 +232,7 @@ body.ready .mars__planet {
 @media screen and (max-width: 500px) {
   .show-buttons{
     position: absolute;
-    margin-top: 110vw;
+    margin-top: 90vw;
     margin-left: 2vw;
     opacity: 0.6;
   }
@@ -252,7 +252,7 @@ body.ready .mars__planet {
     position: absolute;
     color: grey;
     font-size: 3vw;
-    margin-top: 170vw;
+    margin-top: 160vw;
     margin-left: 60vw;
   }
 }
