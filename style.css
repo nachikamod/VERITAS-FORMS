@@ -727,7 +727,7 @@ body.ready .mars__planet {
     border-radius: 0.5vw;
     margin-left: 5vw;
     width: 90vw;
-    height: 160vw;
+    height: 190vw;
   }
 
 
@@ -865,29 +865,31 @@ body.ready .mars__planet {
     border-radius: 5px;
     border: 0;
     outline: 0;
-    padding-right: 1vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 1vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
     background-color: #4A4A4A;
     color: white;
-    font-size: 1vw;
+    font-size: 2.6vw;
   }
 
   #uploader{
     position: absolute;
     margin-top: 0.7vw;
-    width: 35vw;
+    width: 70vw;
     height: 0.2vw;
   }
 
-  .year-container p{
-    position: absolute;
-    color: white;
-    margin-left: 1.5vw;
-    margin-top: 60vw;
-    letter-spacing: 0.1vw;
-  }
+
+    .year-hint{
+      letter-spacing: 0.1vw;
+      position: absolute;
+      font-size: 2.6vw;
+      color: white;
+      margin-top: 84vw;
+      margin-left:1.5vw;
+    }
 
   .year-input input{
     position: absolute;
@@ -897,12 +899,12 @@ body.ready .mars__planet {
     border-left: 0;
     border-right: 0;
     margin-top: 90vw;
-    height: 5vw;
+    height: 8vw;
     padding: 0.4vw;
     width: 94%;
     margin-right: 1vw;
     margin-left: 1vw;
-    font-size: 1vw;
+    font-size: 2.6vw;
     outline: 0;
     border-bottom: 0.1vw solid white;
     font-color: white;
@@ -915,7 +917,7 @@ body.ready .mars__planet {
   }
 
   .year-input input::-webkit-input-placeholder{
-    font-size: 1vw;
+    font-size: 2.6vw;
     color: white;
   }
 
@@ -923,14 +925,16 @@ body.ready .mars__planet {
     color: grey;
   }
 
-  .year-hint{
-    letter-spacing: 0.1vw;
-    position: absolute;
-    font-size: 2.6vw;
-    color: white;
-    margin-top: 84vw;
-    margin-left:1.5vw;
-  }
+
+    .div-hint{
+      letter-spacing: 0.1vw;
+      position: absolute;
+      font-size: 2.6vw;
+      color: white;
+      margin-top: 106vw;
+      margin-left:1.5vw;
+    }
+
 
   .div-input input{
     position: absolute;
@@ -939,7 +943,7 @@ body.ready .mars__planet {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    margin-top: 90vw;
+    margin-top: 112vw;
     height: 8vw;
     padding: 0.4vw;
     width: 94%;
@@ -966,12 +970,12 @@ body.ready .mars__planet {
     color: grey;
   }
 
-  .div-hint{
+  .rollNo-hint{
     letter-spacing: 0.1vw;
     position: absolute;
     font-size: 2.6vw;
     color: white;
-    margin-top: 106vw;
+    margin-top: 128vw;
     margin-left:1.5vw;
   }
 
@@ -982,13 +986,13 @@ body.ready .mars__planet {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    margin-top: 130vw;
-    height: 5vw;
+    margin-top: 134vw;
+    height: 8vw;
     padding: 0.4vw;
     width: 94%;
     margin-right: 1vw;
     margin-left: 1vw;
-    font-size: 1vw;
+    font-size: 2.6vw;
     outline: 0;
     border-bottom: 0.1vw solid white;
     font-color: white;
@@ -1001,7 +1005,7 @@ body.ready .mars__planet {
   }
 
   .rollNo-input input::-webkit-input-placeholder{
-    font-size: 1vw;
+    font-size: 2.6vw;
     color: white;
   }
 
@@ -1009,55 +1013,51 @@ body.ready .mars__planet {
     color: grey;
   }
 
-  .rollNo-hint{
-    letter-spacing: 0.1vw;
-    position: absolute;
-    font-size: 1vw;
-    color: white;
-    margin-top: 112vw;
-    margin-left:1.5vw;
-  }
 
   .events{
     position: absolute;
     background-color: white;
-    margin-top:200vw;
+    margin-top:150vw;
     width: 100%;
     border: 0;
-    height: 5vw;
+    height: 15vw;
     border-radius: 0 0 0.5vw 0.5vw;
   }
 
   .events p {
     padding: 1vw;
-    margin-left: 20.6vw;
+    margin-left: 35vw;
   }
 
   .events input{
+    margin-top: 1vw;
     margin-left: 8.4vw;
   }
 
-  .footer-div{
-    position: absolute;
-    margin-left: 15vw;
-    margin-top: 80vw;
-    color: grey;
-    font-size: 1.3vw;
-  }
-
+  /*Bro here*/
   .submit-form button {
-    width: 50vw;
+    width: 100%;
     position: absolute;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    margin-top: 90vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-top: 170vw;
     border: 0;
     border-radius: 0.5vw;
     background-color: #4A4A4A;
     color: white;
     outline: 0;
-    font-size: 1vw;
+    font-size: 2.6vw;
   }
+
+  .footer-div{
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 188vw;
+    color: grey;
+    font-size: 1.3vw;
+  }
+
+
 /*id card*/
   .info-container{
     position: absolute;
