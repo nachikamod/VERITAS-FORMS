@@ -86,3 +86,12 @@ function checkUrl(){
     document.getElementById("name_field").innerHTML = snapshot.val();
   });
 }
+
+var qrcode=new QRCode(document.getElementById('qrResult'),{
+    width:100,
+      height:100
+     });
+
+     function generate(){
+
+     }

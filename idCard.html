@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
     <meta charset="utf-8">
@@ -19,12 +21,31 @@
       <div class="barcode">
         <img src="barcode.png">
       </div>
-      <div class="name-holder">
+      <div class="name-holder" >
         <h2>REGISTRATION DETAILS</h2>
         <div class="hint-name-field">
             <h3 id="name_field" class="name-field">Someth</h3>
         </div>
       </div>
+      <div id="qrResult" class="qrHolder"></div>
+      <script type="text/javascript">
+       var qrcode=new QRCode(document.getElementById('qrResult'),{
+           width:100,
+             height:100
+            });
+
+            function generate(){
+               var message=document.getElementById('qr');
+                if(!message.value){
+                    alert("Input a text");
+                    message.focus();
+                    return;
+                }
+
+                qrcode.makeCode(localStorage.getItem("uid"));
+            }
+
+        </script>
     </div>
   </body>
 </html>
