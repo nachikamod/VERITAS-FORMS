@@ -52,6 +52,7 @@
                       },
 
                       function complete(){
+                        alert("Profile photo uploaded successfully");
                         var photoUID = localStorage.getItem("uid");
                         task.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                           var database = firebase.database().ref().child("participant").child(photoUID);
