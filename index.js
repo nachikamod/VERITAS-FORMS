@@ -34,6 +34,7 @@ function firebase_api() {
   firebase.database().ref().child("participant").child(uidURLCheck).child("name").on('value', function(snapshot) {
 
     document.getElementById("name_field").innerHTML = snapshot.val();
+    document.getElementById("unique").innerHTML = localStorage.getItem("uid");
   });
 }
 
@@ -91,6 +92,7 @@ function selectTech(){
 function selectSports(){
   localStorage.setItem("event", "Sports");
 }
+
 function selectCultural(){
   localStorage.setItem("event", "Cultural");
 }

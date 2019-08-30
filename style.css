@@ -670,6 +670,7 @@ body.ready .mars__planet {
 }
 
 .name-field{
+  margin-left: -1.5vw;
   text-transform: uppercase;
 }
 
@@ -1141,4 +1142,17 @@ body.ready .mars__planet {
     letter-spacing: 0.5vw;
   }
 /*end*/
+}
+
+.unique-id{
+  position: absolute;
+  margin-top: 3vw;
+  margin-left: 2vw;
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width:500px) {
+  .unique-id{
+    font-size: 4vw;
+  }
 }
