@@ -38,7 +38,11 @@
                 var fileButton = document.getElementById("fileButton");
                 fileButton.addEventListener('change', function(e){
                     var file = e.target.files[0];
-                    var storageRef = firebase.storage().ref(file.name);
+                    var date = new Date();
+                    var hours = date.getHours();
+                    var min = date.getMinutes();
+                    var sec = date.getSeconds();
+                    var storageRef = firebase.storage().ref(hours + "" + min + "" + sec + "" + file.name);
                     var task = storageRef.put(file);
 
                     task.on('state_changed',
