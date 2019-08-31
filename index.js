@@ -62,6 +62,7 @@ function submitData(){
   var gotYear = document.getElementById("year-participant").value;
   var gotDivision = document.getElementById("division-participant").value;
   var gotRollNo = document.getElementById("roll-no-participant").value;
+  var gotEmail = document.getElementById("email-participant").value;
 
 
   if (gotName.length > "5" && gotMobile.length > "8" && gotYear.length > "1" && gotDivision.length > "0" && gotRollNo > "0") {
@@ -72,6 +73,7 @@ function submitData(){
     database.child("year").set(gotYear);
     database.child("division").set(gotDivision);
     database.child("roll_no").set(gotRollNo);
+    database.child("email").set(gotEmail);
     database.child("event").set(gotEvent);
 
     database.on('child_added', function(data){
