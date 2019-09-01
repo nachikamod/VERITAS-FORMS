@@ -319,7 +319,7 @@ body.ready .mars__planet {
 @media screen and (max-width: 500px) {
   .show-buttons{
     position: absolute;
-    margin-top: 70vw;
+    margin-top: 90vw;
     margin-left: 2vw;
     opacity: 0.6;
   }
@@ -339,7 +339,7 @@ body.ready .mars__planet {
     position: absolute;
     color: grey;
     font-size: 3vw;
-    margin-top: 140vw;
+    margin-top: 155vw;
     margin-left: 60vw;
   }
 }
