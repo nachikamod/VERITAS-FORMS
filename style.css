@@ -1365,12 +1365,13 @@ body.ready .mars__planet {
 
 @media screen and (max-width:500px) {
   .all-name-header{
+    opacity: 0.8;
     width: 50vw;
     background-color: #4A4A4A;
     letter-spacing: 0.3vw;
     color: white;
     position: absolute;
-    margin-top: 0vw;
+    margin-top: 1vw;
     border: 0;
     border-radius: 0.5vw 0.5vw 0 0;
     margin-left: 22.7vw;
