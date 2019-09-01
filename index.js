@@ -16,8 +16,8 @@ function firebase_api() {
     var uidURLCheck = localStorage.getItem("uid");
 
   let qrcode = new QRCode("output", {
-      width: 177,
-      height: 177,
+      width: 100,
+      height: 100,
       colorDark : "#990000",
       colorLight : "#ffffff",
       correctLevel : QRCode.CorrectLevel.H
