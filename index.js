@@ -1,5 +1,3 @@
-
-
 function firebase_api() {
   const firebaseConfig = {
     apiKey: "AIzaSyCrU_y9UAhbnHZHcqQmf6UXnfhvLqobIKM",
