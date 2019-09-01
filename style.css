@@ -329,8 +329,8 @@ body.ready .mars__planet {
   position: absolute;
   color: grey;
   font-size: 3vw;
-  margin-top: 45vw;
-  margin-left: 87vw;
+  margin-top: 45%;
+  margin-left: 87%;
   font-size: 1vw;
 }
 
